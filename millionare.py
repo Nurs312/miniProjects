@@ -47,121 +47,122 @@ def millionare():
         'v12': {'a': 'Кентавр', 'b': 'Грифон', 'c': 'Василиск', 'd': 'Единорог'}
     }
 
-
     while flag:
         print(f"И так, первый вопрос: {questions['q1']}\n{variants['v1']}")
-        ans = input('> ').strip().title()
+        ans = input('> ').strip()
         if ans == variants['v1']['b']:
             print('Верно! Вы заработали 10 баллов. Идем дальше.')
             flag = True
 
         else:
             print('Увы это не верный ответ. Игра окончена!')
+            break
+
+        print(f"Второй вопрос: {questions['q2']}\n{variants['v2']}")
+        ans = input('> ').strip()
+        if ans == variants['v2']['d']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
             flag = False
 
-        # print(f"Второй вопрос: {questions['q2']}\n{variants['v2']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v2']['d']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Третий вопрос: {questions['q3']}\n{variants['v3']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v3']['b']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Четвертый вопрос: {questions['q4']}\n{variants['v4']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v4']['c']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Пятый вопрос: {questions['q5']}\n{variants['v5']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v5']['c']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Шестой вопрос: {questions['q6']}\n{variants['v6']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v6']['c']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Седьмой вопрос: {questions['q7']}\n{variants['v7']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v7']['b']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Восьмой вопрос: {questions['q8']}\n{variants['v8']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v8']['a']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Девятый вопрос: {questions['q9']}\n{variants['v9']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v9']['a']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Десятый вопрос: {questions['q10']}\n{variants['v10']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v10']['d']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
-        #
-        # print(f"Одинадцатый вопрос: {questions['q11']}\n{variants['v11']}")
-        # ans = input('> ').strip().title()
-        # if ans == variants['v11']['a']:
-        #     print('Верно! Вы заработали 10 баллов. Идем дальше.')
-        #     flag = True
-        # else:
-        #     print('Увы это не верный ответ. Игра окончена!')
-        #     flag = False
+        print(f"Третий вопрос: {questions['q3']}\n{variants['v3']}")
+        ans = input('> ').strip()
+        if ans == variants['v3']['b']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Четвертый вопрос: {questions['q4']}\n{variants['v4']}")
+        ans = input('> ').strip()
+        if ans == variants['v4']['c']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Пятый вопрос: {questions['q5']}\n{variants['v5']}")
+        ans = input('> ').strip()
+        if ans == variants['v5']['c']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Шестой вопрос: {questions['q6']}\n{variants['v6']}")
+        ans = input('> ').strip()
+        if ans == variants['v6']['c']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Седьмой вопрос: {questions['q7']}\n{variants['v7']}")
+        ans = input('> ').strip()
+        if ans == variants['v7']['b']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Восьмой вопрос: {questions['q8']}\n{variants['v8']}")
+        ans = input('> ').strip()
+        if ans == variants['v8']['a']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Девятый вопрос: {questions['q9']}\n{variants['v9']}")
+        ans = input('> ').strip()
+        if ans == variants['v9']['a']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Десятый вопрос: {questions['q10']}\n{variants['v10']}")
+        ans = input('> ').strip()
+        if ans == variants['v10']['d']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
+
+        print(f"Одинадцатый вопрос: {questions['q11']}\n{variants['v11']}")
+        ans = input('> ').strip()
+        if ans == variants['v11']['a']:
+            print('Верно! Вы заработали 10 баллов. Идем дальше.')
+            flag = True
+        else:
+            print('Увы это не верный ответ. Игра окончена!')
+            flag = False
 
         print(f"Двенадцатый вопрос: {questions['q12']}\n{variants['v12']}")
-        ans = input('> ').strip().title()
+        ans = input('> ').strip()
         if ans == variants['v12']['d']:
-            print('''Верно! Вы заработали 10 баллов. 
+            print('''Верно! Вы заработали 10 баллов.
 Поздравляем! Вы полностью завершили игру с попедой!
 Хотите начать с начала? Тогда введите "Y", Если нет-любую другую букву.''')
-            ans1 = input('> ').upper().strip()
+            ans1 = input('> ').upper()
             if ans1 == 'Y':
                 flag = True
             else:
                 flag = False
+
         else:
             print('Увы это не верный ответ. Игра окончена!')
             flag = False
 
 
+millionare()
